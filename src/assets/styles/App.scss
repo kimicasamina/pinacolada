@@ -1,0 +1,195 @@
+// VARIABLES
+// COLORS 
+$light: #ffffff;
+$dark: #4C5454;
+$lightRed: #FF715B;
+$lightBlue: #1EA896;
+$lightGreen: #9fd39f;
+$brown: #523F38;
+
+// PADDINGS, MARGIN, BORDER
+$br8: 8px;
+$pdSmall: 4px;
+$pd: 8px;
+$mrSmall: 4px;
+$mr: 8px;
+
+// FONTS
+$small: 14px;
+$body: 14px;
+$subTitle: 16px;
+$title: 16px;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // border: solid 1px hotpink;
+}
+
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Silkscreen', cursive;
+    font-size: $body;
+    // height: 100vh;
+}
+
+
+// GLOBALS
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Silkscreen', cursive;
+    font-size: $title;
+    // color: red;
+}
+
+
+.btn {
+    // padding: 8px;
+    border-radius: 8px;
+    border: solid 1px $lightRed;
+    background-color: $lightRed;
+    color: $light;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.btn:hover {
+    // background-color: red;
+    color: $dark;
+}
+
+
+.App {
+    background-color: orange;
+    height: 100vh;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+}
+
+// TOP MENU
+.App .TopMenu {
+    background-color: $brown;
+    color: $light;
+    height: 10%;
+}
+
+
+// MAIN
+.App .main {
+    background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url('./../images/night.png'); 
+    background-size: contain;
+    position: relative;
+    height: 80%;
+    padding: 8px;
+    // display: grid;
+    // grid-template-columns: 30% 70%;
+}
+
+.Moodlets {
+    // background-color: #9fd39f;
+    background-color: $lightGreen;
+    height: auto;
+    position: absolute;
+    right: 0;
+    
+    border-radius: 8px;
+    margin: 8px;
+    padding: 8px;
+    // height: 100vh;
+    
+    .states {
+        display: flex;
+        flex-direction: column;
+        
+        .state {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+// STATUS
+.Status {
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $light;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 8px;
+}
+
+// JOURNAL
+.Journal {
+    width: 60%;
+    // display: flex;
+    // justify-content:stretch;
+    background-color: $light;
+    border-radius: 8px;
+    margin: 4px;
+    // align-self: flex-end;
+    // z-index: 5;
+    // flex-basis: 30%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    // left: 4px;
+}
+
+.Journal .note {
+    // margin: 8px;
+    // width: 100%;
+    // gap: 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.Journal .btn {
+    align-self: center;
+}
+
+// AVATAR
+.Avatar {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    // z-index: 1;
+}
+
+.Avatar .avatarImage {
+    height: 350px;
+    position: absolute;
+    left: 180px;
+    bottom: 0;
+    // background-color: red;
+    // width: 100px;
+}
+
+// BOTTOM MENU
+// BOTTOM MENU
+// BOTTOM MENU
+.App .BottomMenu {
+    background-color: $brown;
+    color: $light;
+    // overflow: hidden;
+    height: 10%;
+
+    padding: 8px;
+}
+
+.App .Skills {
+    // position: absolute;
+    background-color: $light;
+    width: 15%;
+    border-radius: $br8;
+    padding: $pd;
+}
